@@ -1,0 +1,102 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+  
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="#intro" class="scrollto"><img src="{% static 'swift/img/k3.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+ 
+<!--==========================
+          Contact Section
+        ============================-->
+        <section id="contact">
+            <div class="container-fluid">
+      
+              <div class="section-header">
+                <h3>Contact Us</h3>
+              </div>
+      
+              <div class="row wow fadeInUp">
+      
+                <div class="col-lg-6">
+                  <div class="map mb-4 mb-lg-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.676642836999!2d37.124197075799806!3d-0.4828506352774836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182887fe11de511b%3A0xf26a23952a03cd41!2sPostbank%20Karatina%20Branch!5e0!3m2!1sen!2ske!4v1694693083339!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+      
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-md-5 info">
+                      <i class="ion-ios-location-outline"></i>
+                      <p>Karatin Town Postbank House</p>
+                    </div>
+                    <div class="col-md-4 info">
+                      <i class="ion-ios-email-outline"></i>
+                      <p>swiftsoftwaredevs@gmail.com</p>
+                    </div>
+                    <div class="col-md-3 info">
+                      <i class="ion-ios-telephone-outline"></i>
+                      <p>+2547 4647 1338</p>
+                      <p>+2547 0551 3072</p>
+                    </div>
+                  </div>
+                    
+                  <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="{% url 'contact' %}" method="POST" class="contactForm">
+                      <div class="form-row">
+                        <div class="form-group col-lg-6">
+                          {% csrf_token %}
+                          <input type="text" name="your-name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <input type="email" class="form-control" name="your-email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                          <div class="validation"></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="message-subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" name="your-message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                      </div>
+                      <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                    </form>
+                  </div>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section><!-- #contact -->
+      
+        </main>
+
+{% endblock %}
+  

@@ -1,0 +1,144 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="#intro" class="scrollto"><img src="{% static 'swift/img/k3.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+      <!--==========================
+        Why Us Section
+      ============================-->
+      <section id="why-us" class="wow fadeIn">
+        <div class="container">
+          <header class="section-header">
+            <h3>Why choose us?</h3>
+            <p>When it comes to bringing your digital dreams to life, there are countless web development companies out there vying for your attention. So, why should you choose Swift Website Developers? We believe our unwavering commitment to excellence sets us apart. Here are some compelling reasons why you should partner with us for your web development needs:</p>
+          </header>
+  
+          <div class="row row-eq-height justify-content-center">
+  
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                  <i class="fa fa-diamond"></i>
+                <div class="card-body">
+                  <h5 class="card-title"> Expertise That Matters</h5>
+                  <p class="card-text">Our team comprises seasoned web developers with years of experience in the field.</p>
+                  <a href="#" class="readmore"> </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                  <i class="fa fa-language"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Tailored Solutions</h5>
+                  <p class="card-text">We understand that every project is unique, and we approach each one with a fresh perspective.</p>
+                  <a href="#" class="readmore"></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                  <i class="fa fa-object-group"></i>
+                <div class="card-body">
+                  <h5 class="card-title">User-Centric Approach</h5>
+                  <p class="card-text">User experience is at the heart of our development process. We design websites that are intuitive and easy to navigate, resulting in higher user engagement and satisfaction. </p>
+                  <a href="#" class="readmore"></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="row counters">
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">153</span>
+              <p>Clients</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">153</span>
+              <p>Projects</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">24</span>
+              <p>Hours Of Support</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">10</span>
+              <p>Workers</p>
+            </div>
+    
+          </div>
+  
+        </div>
+      </section>
+
+    <!--==========================
+        Services Section
+      ============================-->
+      <section id="services" class="section-bg">
+        <div class="container">
+  
+          <header class="section-header">
+            <h3>Services</h3>
+            <p>We Major in the Following Areas.</p>
+          </header>
+  
+          <div class="row">
+  
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+                <h4 class="title"><a href="">Website Development</a></h4>
+                <p class="description">We fully develop your website based on the client's needs and fully customize it to meet the clients needs and preferences. </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+                <h4 class="title"><a href=""></a>Website Management</h4>
+                <p class="description">We ensure that your website is upto date.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+                <h4 class="title"><a href=""></a>Social Media Management</h4>
+                <p class="description">We create and manage the following platforms; Instagram, Facebook and Youtube to ensure maximum online availability.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- #services -->
+
+    {% endblock %}

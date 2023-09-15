@@ -1,0 +1,112 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+  
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="#intro" class="scrollto"><img src="{% static 'swift/img/k3.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+        <div class="container">
+  
+          <header class="section-header">
+            <h3>About Us</h3>
+            <p>We are a skilled team of Swift website developers committed to creating dynamic and responsive web experiences using the latest technologies.</p>
+          </header>
+  
+          <div class="row about-container">
+  
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <p>
+                Our expertise lies in harnessing the power of Swift to craft dynamic, responsive, and visually captivating websites that engage and delight users. With a deep understanding of the language's capabilities and the latest web development trends, we're dedicated to delivering seamless online experiences that empower businesses and individuals alike. Innovation, precision, and user-centric design are at the core of our work, as we continually push the boundaries of what Swift can achieve in the ever-evolving world of web development..
+              </p>
+  
+              <div class="icon-box wow fadeInUp">
+                <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                <h4 class="title"><a href="">Mission</a></h4>
+                <p class="description">Our mission is to leverage the versatility and power of Swift to revolutionize the web development industry. We aim to empower businesses and individuals with cutting-edge, responsive websites that elevate their online presence.</p>
+              </div>
+  
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <div class="icon"><i class="fa fa-photo"></i></div>
+                <h4 class="title"><a href="">Vision</a></h4>
+                <p class="description">Our vision is to be the leading force in Swift web development, recognized globally for our unwavering dedication to pushing the boundaries of what's possible in the digital realm.</p>
+              </div>
+  
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                <h4 class="title"><a href="">Core Values</a></h4>
+                <p class="description"><strong>i. Excellence</strong>: We are committed to delivering excellence in everything we do, from code craftsmanship to client relationships, always striving to exceed expectations.<br/><strong>ii. Innovation</strong>: We embrace innovation as a driving force, continually exploring new technologies and solutions to provide cutting-edge Swift web development.<br/><strong>iii. Integrity</strong>: We operate with honesty, integrity, and transparency.<br/><strong>iv. Collaboration</strong>: We believe in the power of collaboration, fostering a culture of teamwork and open communication, both internally and with our clients.</p>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+              <img src="{% static 'swift/img/about-img.svg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+  
+          <div class="row about-extra">
+            <div class="col-lg-6 wow fadeInUp">
+              <img src="{% static 'swift/img/about-extra-1.svg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+              <h4>Experience</h4>
+              <p>
+                With a wealth of experience in Swift web development, our company has built a strong foundation of expertise that spans years of dedicated work in the field. Our team brings together seasoned professionals who have successfully executed a diverse range of projects, from dynamic web applications to responsive e-commerce platforms, utilizing the Swift programming language to its fullest potential.
+              </p>
+              <p>
+                Our track record showcases a portfolio of projects across various industries, reflecting our adaptability and versatility. From startups looking to make a strong online debut to established enterprises seeking to modernize their digital presence, our experience allows us to tailor solutions that are both innovative and reliable.
+              </p>
+              <p>
+                As we continue to grow and evolve, our commitment to leveraging our experience for the benefit of our clients remains unwavering. We look forward to applying our extensive knowledge and expertise to every new project, helping businesses thrive in the dynamic world of Swift web development.
+              </p>
+            </div>
+          </div>
+  
+          <div class="row about-extra">
+            <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+              <img src="{% static 'swift/img/about-extra-2.svg' %}" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+              <h4>Target Market</h4>
+              <p>
+               
+              Swift Website Developers' target market is diverse yet united by a common thread—individuals and businesses seeking high-quality, responsive, and innovative web solutions. Our primary audience includes: Startups and Entrepreneurs, Small and Medium-sized Businesses (SMBs), E-commerce Ventures, Hotels, Large Enterprise.
+              </p>
+            </div>
+            
+          </div>
+  
+        </div>
+      </section><!-- #about -->
+  
+      
+
+{% endblock %}  
